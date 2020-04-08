@@ -10,7 +10,7 @@ Table with codes for the combination
 
 |      |                                                              |
 | ---- | ------------------------------------------------------------ |
-| 0    | 30 body parts                                                |
+| 0    | 28 body parts                                                |
 | 1    | stopping, unbalancing, falling, turning, jumping, opening, free movement, squeezing, twisting, changing support |
 | 2    | long-term, instantaneous                                     |
 | 3    | swing, touch, wiggle, slip, kick, whiplash                   |
