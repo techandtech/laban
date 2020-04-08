@@ -24,7 +24,7 @@ Table with codes for the combination
 2. Next, enter the combination consisting of numbers from 0 to 6, for example **6125**.
 3. Then enter the number of times the combination is repeated, for example **3**.
 
-![img](https://lh6.googleusercontent.com/49jLRMphIfYsjpMgDK4TINFBZmzVBh9_8Q5ec_bl5nd-Uq3NGS3J3kQb5MOW8g4VsD_UiSy9b3bo2KLKqz3Cb7ktNFW7bTqV71x0BbdncQUU4ETLdFagk1Sh8CUnCMMwej0Seo-f)
+![img](https://lh6.googleusercontent.com/KtaKPcylF72q4Vgujmacd8RV5AXLGQOgK5fRpkGLTnIOLLcQeuztzuqGQToT3dQj9uo0AkDed-_fgrI7uFInPe8-b7vXBRVpV3m5ujuy_lFrLoQmMKF7paFGPZYWhUQAxCc4muvM)
 
 Video demonstration of the program: https://youtu.be/D2S3VfFqfTY
 
