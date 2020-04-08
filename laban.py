@@ -9,8 +9,8 @@ pygame.init()
 
 folder_path = str(os.getcwd())
 
-body_parts_files = glob.glob(folder_path + '/categories/body_parts/*.wav')
-type_of_movement_files = glob.glob(folder_path + '/categories/type_of_movement/*.wav')
+body_parts_files = glob.glob(folder_path + '/categories/body parts/*.wav')
+type_of_movement_files = glob.glob(folder_path + '/categories/type of movement/*.wav')
 timing_files = glob.glob(folder_path + '/categories/timing/*.wav')
 quality_of_movement_files = glob.glob(folder_path + '/categories/quality/*.wav')
 space_files = glob.glob(folder_path + '/categories/space/*.wav')
@@ -83,12 +83,12 @@ def play_and_repeat_combination(time_delay):
 
 
 def play_ready_steady_improvise():
-    impro = pygame.mixer.Sound(folder_path + '/other/Ready.wav')
+    impro = pygame.mixer.Sound(folder_path + '/transition/ready.wav')
     impro.play()
     time.sleep(pygame.mixer.Sound(impro).get_length())
 
 def play_scratch():
-    scratch = pygame.mixer.Sound(folder_path + '/other/scratch.ogg')
+    scratch = pygame.mixer.Sound(folder_path + '/transition/scratch.ogg')
     scratch.play()
     time.sleep(pygame.mixer.Sound(scratch).get_length())
 
