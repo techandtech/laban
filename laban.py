@@ -61,7 +61,6 @@ categories_list = ['body_parts_files', 'type_of_movement_files', 'timing_files',
 def play_combination(combination):
     for i in range(0, len(combination)):
         combination_path =  random.choice(eval(categories_list[int(combination[i])]))
-        #print(categories_list[int(combination[i])])
         play_combination = pygame.mixer.Sound(combination_path)
         play_combination.play()
 
