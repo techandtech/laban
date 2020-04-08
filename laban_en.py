@@ -65,7 +65,7 @@ def play_combination(combination):
         play_combination.play()
 
         pronunciation_interval = pygame.mixer.Sound(play_combination).get_length()
-        pause = int(1) # пауза между словами
+        pause = int(1) # pause between words
         time.sleep(pronunciation_interval + pause)
 
 
