@@ -7,19 +7,17 @@ import time
 pygame.mixer.init()
 pygame.init()
 
-folder_path = 'C:/PROJECTS/ATOM/Laban/'
+folder_path = str(os.getcwd())
 
-laban_files = folder_path + 'categories/'
+body_parts_files = glob.glob(folder_path + '/categories/body_parts/*.wav')
+type_of_movement_files = glob.glob(folder_path + '/categories/type_of_movement/*.wav')
+timing_files = glob.glob(folder_path + '/categories/timing/*.wav')
+quality_of_movement_files = glob.glob(folder_path + '/categories/quality/*.wav')
+space_files = glob.glob(folder_path + '/categories/space/*.wav')
+technique_files = glob.glob(folder_path + '/categories/technique/*.wav')
+figure_files = glob.glob(folder_path + '/categories/figure/*.wav')
 
-body_parts_files = glob.glob(laban_files + 'body_parts/*.wav')
-type_of_movement_files = glob.glob(laban_files + 'type_of_movement/*.wav')
-timing_files = glob.glob(laban_files + 'timing/*.wav')
-quality_of_movement_files = glob.glob(laban_files + 'quality/*.wav')
-space_files = glob.glob(laban_files + 'space/*.wav')
-technique_files = glob.glob(laban_files + 'technique/*.wav')
-figure_files = glob.glob(laban_files + 'figure/*.wav')
-
-jam_files = sorted(glob.glob(folder_path + 'jam/*.ogg'))
+jam_files = sorted(glob.glob(folder_path + '/jam/*.ogg'))
 
 
 def input_combination():
@@ -36,7 +34,7 @@ def input_combination():
 def input_time_delay():
     while True:
         try:
-           time_delay = int(input('Введите интервал между повторениями: '))
+           time_delay = int(input('Введите паузу между повторениями: '))
         except ValueError:
            print('Введите число.')
            continue
@@ -47,7 +45,7 @@ def input_time_delay():
 def input_repeat_number():
     while True:
         try:
-           repeat_number = int(input('Введите кол-во повторений: '))
+           repeat_number = int(input('Введите количество повторений: '))
         except ValueError:
            print('Введите число.')
            continue
@@ -63,7 +61,7 @@ categories_list = ['body_parts_files', 'type_of_movement_files', 'timing_files',
 def play_combination(combination):
     for i in range(0, len(combination)):
         combination_path =  random.choice(eval(categories_list[int(combination[i])]))
-        print(categories_list[int(combination[i])])
+        #print(categories_list[int(combination[i])])
         play_combination = pygame.mixer.Sound(combination_path)
         play_combination.play()
 
@@ -85,12 +83,12 @@ def play_and_repeat_combination(time_delay):
 
 
 def play_ready_steady_improvise():
-    impro = pygame.mixer.Sound(folder_path + 'other/Ready.wav')
+    impro = pygame.mixer.Sound(folder_path + '/other/Ready.wav')
     impro.play()
     time.sleep(pygame.mixer.Sound(impro).get_length())
 
 def play_scratch():
-    scratch = pygame.mixer.Sound(folder_path + 'other/scratch.ogg')
+    scratch = pygame.mixer.Sound(folder_path + '/other/scratch.ogg')
     scratch.play()
     time.sleep(pygame.mixer.Sound(scratch).get_length())
 
@@ -112,6 +110,6 @@ def main():
         play_scratch()
         play_jam()
 
-
+        
 if __name__=='__main__':
     main()
