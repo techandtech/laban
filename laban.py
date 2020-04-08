@@ -34,7 +34,7 @@ def input_combination():
 def input_time_delay():
     while True:
         try:
-           time_delay = int(input('Введите паузу между повторениями: '))
+           time_delay = int(input('Введите паузу между повторами: '))
         except ValueError:
            print('Введите число.')
            continue
@@ -45,7 +45,7 @@ def input_time_delay():
 def input_repeat_number():
     while True:
         try:
-           repeat_number = int(input('Введите количество повторений: '))
+           repeat_number = int(input('Введите количество повторов: '))
         except ValueError:
            print('Введите число.')
            continue
