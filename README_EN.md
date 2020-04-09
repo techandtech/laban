@@ -6,17 +6,15 @@ pip3 install pygame
 
 Table with codes for the combination
 
-0 - body parts, 1 - type of movement, 2 - duration of movement, 3 - quality of movement, 4 - space, 5 - mode of movement, 6 - figure
-
-|      |                                                              |
-| ---- | ------------------------------------------------------------ |
-| 0    | 28 body parts                                                |
-| 1    | stopping, unbalancing, falling, turning, jumping, opening, free movement, squeezing, twisting, changing support |
-| 2    | long-term, instantaneous                                     |
-| 3    | swing, touch, wiggle, slip, kick, whiplash                   |
-| 4    | single focus, moving focus                                   |
-| 5    | impact, impulse, continuous movement, rebound, swing.        |
-| 6    | circle, line, broken line, point, triangle, quadrangle       |
+| Number | Category                  | Possible options                                           |
+| ----- | -------------------------- | ------------------------------------------------------------ |
+| 0     | body parts               | 28 body parts                                               |
+| 1     | type of movement              | stopping, unbalancing, falling, turning, jumping, opening, free movement, squeezing, twisting, changing support |
+| 2     | duration of movement | long-term, instantaneous                                         |
+| 3     | quality of movement         | swing, touch, wiggle, slip, kick, whiplash |
+| 4     | space             | single focus, moving focus                        |
+| 5     | mode of movement | impact, impulse, continuous movement, rebound, swing           |
+| 6     | figure                     | circle, line, broken line, point, triangle, quadrangle  |
 
 ## How the program works
 
