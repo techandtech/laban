@@ -13,7 +13,7 @@ Table with codes for the combination
 | 2     | duration of movement | long-term, instantaneous                                         |
 | 3     | quality of movement         | swing, touch, wiggle, slip, kick, whiplash |
 | 4     | space             | single focus, moving focus                        |
-| 5     | mode of movement | impact, impulse, continuous movement, rebound, swing           |
+| 5     | mode of movement | impact, impulse, continuous movement, rebound           |
 | 6     | figure                     | circle, line, broken line, point, triangle, quadrangle  |
 
 ## How the program works
