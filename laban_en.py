@@ -59,7 +59,7 @@ categories_list = ['body_parts_files', 'type_of_movement_files', 'timing_files',
 
 
 def play_combination(combination):
-    for i in range(0, len(combination)):
+    for i in range(len(combination)):
         combination_path =  random.choice(eval(categories_list[int(combination[i]) - 1]))
         play_combination = pygame.mixer.Sound(combination_path)
         play_combination.play()
@@ -72,7 +72,7 @@ def play_combination(combination):
 def play_and_repeat_combination(time_delay):
     combination = input_combination()
     repeat_number = input_repeat_number()
-    for _ in range(0, repeat_number):
+    for _ in range(repeat_number):
         play_combination(combination)
         time_delay -= 1
         if time_delay < 1:
