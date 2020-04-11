@@ -9,13 +9,13 @@ pygame.init()
 
 folder_path = str(os.getcwd())
 
-body_parts_files = glob.glob(folder_path + '/files_en/categories/body parts/*.wav')
-type_of_movement_files = glob.glob(folder_path + '/files_en/categories/type of movement/*.wav')
-timing_files = glob.glob(folder_path + '/files_en/categories/timing/*.wav')
-quality_of_movement_files = glob.glob(folder_path + '/files_en/categories/quality/*.wav')
-space_files = glob.glob(folder_path + '/files_en/categories/space/*.wav')
-technique_files = glob.glob(folder_path + '/files_en/categories/technique/*.wav')
-figure_files = glob.glob(folder_path + '/files_en/categories/figure/*.wav')
+body_parts_files = glob.glob(folder_path + '/files_ru/categories/body parts/*.wav')
+type_of_movement_files = glob.glob(folder_path + '/files_ru/categories/type of movement/*.wav')
+timing_files = glob.glob(folder_path + '/files_ru/categories/timing/*.wav')
+quality_of_movement_files = glob.glob(folder_path + '/files_ru/categories/quality/*.wav')
+space_files = glob.glob(folder_path + '/files_ru/categories/space/*.wav')
+technique_files = glob.glob(folder_path + '/files_ru/categories/technique/*.wav')
+figure_files = glob.glob(folder_path + '/files_ru/categories/figure/*.wav')
 
 jam_files = sorted(glob.glob(folder_path + '/jam/*.ogg'))
 
@@ -23,9 +23,9 @@ jam_files = sorted(glob.glob(folder_path + '/jam/*.ogg'))
 def input_combination():
     while True:
         try:
-           combination = int(input('Enter the combination(1 — 7): '))
+           combination = int(input('Введите комбинацию (1 — 7): '))
         except ValueError:
-           print('Enter the number.')
+           print('Введите число.')
            continue
         else:
            return list(str(combination))
@@ -34,9 +34,9 @@ def input_combination():
 def input_time_delay():
     while True:
         try:
-           time_delay = int(input('Enter a pause between repetitions: '))
+           time_delay = int(input('Введите паузу между повторами: '))
         except ValueError:
-           print('Enter the number.')
+           print('Введите число.')
            continue
         else:
            return time_delay
@@ -45,9 +45,9 @@ def input_time_delay():
 def input_repeat_number():
     while True:
         try:
-           repeat_number = int(input('Enter the number of repetitions: '))
+           repeat_number = int(input('Введите количество повторов: '))
         except ValueError:
-           print('Enter the number.')
+           print('Введите число.')
            continue
         else:
            return repeat_number
@@ -95,7 +95,7 @@ def play_jam():
     track = pygame.mixer.Sound(random.choice(jam_files))
     track_duration = pygame.mixer.Sound(track).get_length()
     print()
-    print('Track duration:', time.strftime("%M:%S", time.gmtime(track_duration)))
+    print('Длительность трека:', time.strftime("%M:%S", time.gmtime(track_duration)))
     print()
     track.play()
     time.sleep(track_duration)
