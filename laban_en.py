@@ -23,7 +23,7 @@ jam_files = sorted(glob.glob(folder_path + '/jam/*.ogg'))
 def input_combination():
     while True:
         try:
-           combination = int(input('Enter the combination(0 — 6): '))
+           combination = int(input('Enter the combination(1 — 7): '))
         except ValueError:
            print('Enter the number.')
            continue
@@ -60,12 +60,12 @@ categories_list = ['body_parts_files', 'type_of_movement_files', 'timing_files',
 
 def play_combination(combination):
     for i in range(0, len(combination)):
-        combination_path =  random.choice(eval(categories_list[int(combination[i])]))
+        combination_path =  random.choice(eval(categories_list[int(combination[i]) - 1]))
         play_combination = pygame.mixer.Sound(combination_path)
         play_combination.play()
 
         pronunciation_interval = pygame.mixer.Sound(play_combination).get_length()
-        pause = int(1) # pause between words
+        pause = int(1) # пауза между словами
         time.sleep(pronunciation_interval + pause)
 
 
