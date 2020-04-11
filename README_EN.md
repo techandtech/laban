@@ -8,13 +8,13 @@ Table with codes for the combination
 
 | Number | Category                  | Possible options                                           |
 | ----- | -------------------------- | ------------------------------------------------------------ |
-| 0     | body parts               | 28 body parts                                               |
-| 1     | type of movement              | stopping, unbalancing, falling, turning, jumping, opening, free movement, squeezing, twisting, changing support |
-| 2     | duration of movement | long-term, instantaneous                                         |
-| 3     | quality of movement         | swing, touch, wiggle, slip, kick, whiplash |
-| 4     | space             | single focus, moving focus                        |
-| 5     | mode of movement | impact, impulse, continuous movement, rebound           |
-| 6     | figure                     | circle, line, broken line, point, triangle, quadrangle  |
+| 1     | body parts               | 28 body parts                                               |
+| 2     | type of movement              | stopping, unbalancing, falling, turning, jumping, opening, free movement, squeezing, twisting, changing support |
+| 3     | duration of movement | long-term, instantaneous                                         |
+| 4     | quality of movement         | swing, touch, wiggle, slip, kick, whiplash |
+| 5     | space             | single focus, moving focus                        |
+| 6     | mode of movement | impact, impulse, continuous movement, rebound           |
+| 7     | figure                     | circle, line, broken line, point, triangle, quadrangle  |
 
 ## How the program works
 
