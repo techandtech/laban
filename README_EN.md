@@ -19,10 +19,8 @@ Table with codes for the combination
 ## How the program works
 
 1. The user enters the interval between repetitions of the combination in seconds, for example **5**.
-2. Next, enter the combination consisting of numbers from 1 to 7, for example **6125**.
+2. Next, enter the combination consisting of numbers from 1 to 7, for example **7236**.
 3. Then enter the number of times the combination is repeated, for example **3**.
-
-![img](https://lh6.googleusercontent.com/KtaKPcylF72q4Vgujmacd8RV5AXLGQOgK5fRpkGLTnIOLLcQeuztzuqGQToT3dQj9uo0AkDed-_fgrI7uFInPe8-b7vXBRVpV3m5ujuy_lFrLoQmMKF7paFGPZYWhUQAxCc4muvM)
 
 Video demonstration of the program: https://youtu.be/TWnkuZWifd8
 
